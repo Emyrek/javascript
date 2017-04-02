@@ -1,19 +1,17 @@
 var tab=[10,15,6,14,14,13,19,10,17,9];
-var bool=0;
-//document.getElementById("aaa").innerHTML=document.write(Boolean(bool));
+var bool=false;
 
 function affTab(tab,bool)
 {
 	var i=0;
-			document.getElementById("aaa").innerHTML=document.write(Boolean(bool));
 	for(i=0;i<10;i++)
 	{
-		if(bool==1)
+		if(bool==true)
 		{
 			document.getElementById("aaa").innerHTML=document.write(tab[i] + " ");
 		}
 	
-		else if(bool==0)
+		else if(bool==false)
 		{
 			if(tab[i]<=15)
 			{
@@ -31,7 +29,7 @@ function affTab(tab,bool)
 	i=0;
 	while(i<10)
 	{
-		if(bool==1)
+		if(bool==true)
 		{
 			document.getElementById("aaa").innerHTML=document.write(tab[i] + " ");
 		}
