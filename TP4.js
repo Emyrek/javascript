@@ -1,8 +1,12 @@
 var tab=[10,15,6,14,14,13,19,10,17,9];
-var bool=false;
+var bool=3;
 
 function affTab(tab,bool)
 {
+	if (typeof bool != "boolean")
+	{
+		alert("Error: bool is of type " + typeof bool);
+	}
 	var i=0;
 	for(i=0;i<10;i++)
 	{
