@@ -8,19 +8,20 @@
 <body>
 
 <form id="etudiant">
-Prénom: <input type="text" name="FirstName"><br>
-Nom: <input type="text" name="LastName"><br>
-Numéro étudiant: <input type="text" name="NumEtu"><br>
+Prénom: <input id="prenom" type="text" name="FirstName"><br>
+Nom: <input id="nom" type="text" name="LastName"><br>
+Numéro étudiant: <input id="numero" type="text" name="NumEtu"><br>
 
-<select name="section" form="etudiant">
+<select  id="section" name="section" form="etudiant">
   <option value="Maths">Maths</option>
   <option value="Info">Info</option>
   <option value="CMI">CMI</option>
 </select><br>
 
-<input type="submit" value="Submit">
+<input onclick="add()" id="submit" type="submit" value="Ajout">
 </form>
 
+<p id="test"></p>
 
 <script src="java.js"></script>
 </body>
