@@ -4,10 +4,25 @@ function add()
 
 
 	var paragraphe=document.createElement("p");
-	var node=document.createTextNode("Vous vous appelez " + document.getElementById("prenom").value + " " + document.getElementById("nom").value + ", votre numéro étudiant est " + document.getElementById("numero").value + ", et vous êtes en " + document.getElementById("section").value );
-	paragraphe.appendChild(node);
+	var node1=document.createTextNode(document.getElementById("prenom").value)
+	paragraphe.appendChild(node1);
+	var node2=document.createTextNode(document.getElementById("nom").value)
+	paragraphe.appendChild(node2);
+	var node3=document.createTextNode(document.getElementById("numero").value)
+	paragraphe.appendChild(node3);
+	var node4=document.createTextNode(document.getElementById("section").value)
+	paragraphe.appendChild(node4);
 	var element=document.getElementById("modifDOM");
 	element.appendChild(paragraphe);
 
 }
 
+function compte()
+{
+	 var liste = document.getElementsByTagName("p");
+	 document.getElementById("test").innerHTML = liste.length; 
+}
+
+add();
+
+compte();
